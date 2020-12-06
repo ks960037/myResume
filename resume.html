@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML履歷表-趙寬敏</title>
+    <style type: "text/css">
+    .meter1{
+    width: 50%;/*用%表示是佔網頁寬度的比重*/
+    height: 30px;
+    }
+    .canvas1{
+    border: 3px solid #FF9900;
+    }
+
+    /*   border: solid 1px black; */
+    body{
+    padding: 35px;
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+    color: #111111;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 2px;
+    font-family: "華康行書體","微軟正黑體",sans-serif;
+    }
+
+    /* 文字區 */
+    ul{
+    padding: 0;
+    list-style: none;
+    font-family: "華康行書體";
+    }
+    h2{
+    margin: 0;
+    margin-bottom: 25px;
+    font-weight: 400;
+    }
+    h2::after{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 8px;
+    background-color: rgb(67, 54, 255);
+    margin-left: 10px;
+    }
+    h4{
+    margin: 0;
+    margin-top: 40px;
+    opacity: 0.8;
+    font-weight: 400;
+    }
+    a{
+    color: #111111;
+    text-decoration: none
+    }
+    hr{
+    border: none;
+    border-bottom: solid 2px rgb(35, 125, 255);
+    width: 40%;
+    margin-left: 0;
+    }
+
+
+    .resume{
+    display: flex;
+    max-width: 950px;
+    border: solid 5px rgb(67, 54, 255);
+    padding: 40px;
+    position: relative;
+    }
+    .left{
+    flex: 5
+    }
+    .right{
+    flex: 7
+    }
+    .left,.right{
+    padding: 10px
+    }
+    .left{
+    padding-right: 40px;
+    border-right: solid 1px rgb(67, 54, 255);
+    }
+
+    .right{
+    padding-left: 40px;
+    padding-top: 10px;
+    }
+
+
+    .decoration{
+    width: 300px;
+    height: 140px;
+    background: linear-gradient(135deg,rgb(67, 54, 255),#FFFFAE);
+    border-radius: 70px 0px 0px 70px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    }
+
+    .listExperience>li{
+    display: flex;
+    margin-bottom: 10px;
+
+    }
+
+    .listExperience>li:nth-child(1) ul{
+    border-color: rgb(67, 54, 255)
+    }
+    .listExperience>li:nth-child(2) ul{
+    border-color: rgb(104, 93, 255)
+    }
+    .listExperience>li:nth-child(3) ul{
+    border-color: rgb(154, 146, 255)
+    }
+    .listExperience>li:nth-child(4) ul{
+    border-color: rgb(206, 201, 255)
+    }
+    .listExperience li ul{
+    padding-left: 10px;
+    margin-left: 10px;
+    border-left: solid 4px white
+    }
+
+
+    /* list */
+    .list{
+    display: flex;
+    flex-wrap: wrap;
+
+    }
+    .list li{
+        width:50%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+
+    .circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(221, 218, 255)
+    }
+    .circle::after{
+    content: "";
+    display: block;
+
+    background-color: rgb(255, 255, 255);
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%)
+    }
+    .p90,.p180,.p270,.p360{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    background-color: rgb(67, 54, 255);
+    }
+    .p180{
+    top: 50%;
+    }
+    .p270{
+    left: 0;
+    top: 50%;
+    }
+    .p360{
+    left: 0;
+    top: 0;
+    }
+
+    /* list program */
+
+    .listProgram .bar{
+    width: 150px;
+    height: 10px;
+    border: solid 2px rgb(67, 54, 255);
+    border-radius: 5px
+    }
+    .listProgram li{
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding-top: 10px;
+    }
+    .listProgram div{
+    width: 50%;
+    }  
+
+    .btn{
+    border: solid 3px rgb(67, 54, 255);
+    padding: 5px 20px;
+    margin-right: 1px;
+    }
+    .fill{
+    color:rgb(255, 255, 255);
+    background-color: rgb(67, 54, 255);
+    }
+
+    .meter{
+        width: 150px;
+    }
+    meter::-webkit-meter-bar {
+    background: rgba(255, 255, 255, 0);
+    }
+    meter::-webkit-meter-optimum-value {
+    background: linear-gradient(to bottom, rgb(67, 54, 255), rgb(153, 146, 255));
+    }
+
+    </style>
+<script type="application/javascript">
+
+</script>
+</head>
+
+<body background="https://cf.shopee.tw/file/7e1564bd4fc87ad2df69824e0cb3eab4">
+    <div class="resume">
+        <div class="left">
+            <h1>趙寬敏</h1>
+            <h2>金融法律雙主修</h2>
+            <h4> 一個拿著雙主修學歷去寫code的跳逼</h4>
+            <hr>
+            <p></p>
+            <div class="buttons">
+                <a class="btn fill" href="http://104.215.154.127" target="_blank">資策專題作品(已死)</a>
+                <!--作品集網址-->
+                <a class="btn" href="https://github.com/ks960037" target="_blank">Github</a>
+            </div>
+            <div>
+                <h4>Abilities</h4>
+                <h2>開發能力</h2>
+                <ul class="list">
+                    <li>
+                        <div class="circle">
+                            <div class="p90"></div>
+                            <div class="p180"></div>
+                            <div class="p270"></div>
+                        </div>
+                        前端<br>網頁開發<br>(html/css/js)
+                    </li>
+                    <li>
+                        <div class="circle">
+                            <div class="p90"></div>
+                            <div class="p180"></div>
+                        </div>
+                        後端伺服器<br>開發能力<br>(PHP)
+                    </li>
+                    <li>
+                        <div class="circle">
+                            <div class="p90"></div>
+                            <div class="p180"></div>
+                            <div class="p270"></div>
+                            <div class="p360"></div>
+                        </div>
+                        Egret<br>網頁遊戲<br>開發能力
+                    </li>
+                    <li>
+                        <div class="circle">
+                            <div class="p90"></div>
+                            <div class="p180"></div>
+                        </div>
+                        雲端<br>遠端開發能力
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4>Programming Skill</h4>
+                <h2>程式語言</h2>
+                <ul class="listProgram">
+                    <hr> * 九江資訊工作時期
+                    <li>
+                        <div><label>MarkDown</label></div>
+                        <div>
+                            <meter min="0" max="100" value="70" class="meter"></meter>
+                        </div>
+                    </li>
+                    <li>
+                        <div><label>xml</label></div>
+                        <div>
+                            <meter min="0" max="100" value="60" class="meter"></meter>
+                        </div>
+                    </li>
+                    <li>
+                        <div><label>Javascript</label></div>
+                        <div>
+                            <meter min="0" max="100" value="70" class="meter"></meter>
+                        </div>
+                    </li>
+                    <li>
+                        <div><label>Typescript</label></div>
+                        <div>
+                            <meter min="0" max="100" value="90" class="meter"></meter>
+                        </div>
+                    </li>
+                    <hr> * 資策會專題時期
+                    <li>
+                        <div><label>MS-SQL</label></div>
+                        <div>
+                            <meter min="0" max="100" value="50" class="meter"></meter>
+                        </div>
+                    </li>
+                    <li>
+                        <div><label>Html/Css/Js</label></div>
+                        <div>
+                            <meter min="0" max="100" value="40" class="meter"></meter>
+                        </div>
+                    </li>
+                    <li>
+                        <div><label>PHP</label></div>
+                        <div>
+                            <meter min="0" max="100" value="60" class="meter"></meter>
+                        </div>
+                    </li>
+                    <li>
+                        <div><label>Java</label></div>
+                        <div>
+                            <meter min="0" max="100" value="40" class="meter"></meter>
+                        </div>
+                    </li>
+                    <li>
+                        <div><label>Python</label></div>
+                        <div>
+                            <meter min="0" max="100" value="30" class="meter"></meter>
+                        </div>
+                    </li>
+                    <li>
+                        <div><label>Azure</label></div>
+                        <div>
+                            <meter min="0" max="100" value="50" class="meter"></meter>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <div>
+                <iframe src="https://drive.google.com/file/d/1Ypv4bad4vrTEzVwE6OySjYXxmnOT7jFd/preview" width="180" height="240" align="right"></iframe>
+                <!--<img src="myHeadPic.jpg" align="right" width="180" alt="大頭照"/> 大頭照放這邊-->
+            </div>
+            <div>
+                <h4>Contests</h4>
+                <h2>關於我</h2>
+                <ul>
+                    <li>　　自高雄大學雙主修畢業後，在證券業工作的時候因為聽說了程式交易、FinTech等，發覺掌握程式將是未來的重要能力，就如同掌握英文是國際語言同等的重要，於是便辭職轉向程式發展，於是就報名了資策會的訓練課程。
+                        <br>　　資策會結訓前，便找到了有來資策會徵才的九江資訊前端工程師的工作，於九江工作至今已屆滿1年。
+                        <br>　　在九江使用的前端框架是Egret，寫程式的過程中，經常碰到許多BUG是來自於更底層的概念不夠清楚，像是Javascript何時使用傳值呼叫，何時傳參呼叫...等，因此萌生了想要再更進一步學習更底層的邏輯與概念。
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4>Experience</h4>
+                <h2>人生大事記</h2>
+                <ul class="listExperience">
+                    <li class="year">
+                        2019年10月
+                        <br> 2019年07月
+                        <br>
+                        <ul>
+                            <li>九江資訊有限公司-前端工程師</li>
+                            <li>資策會Java養成班-第三組組長</li>
+                        </ul>
+                    </li>
+                    <li class="year">
+                        2019年01月
+                        <br> 2018年07月
+                        <ul>
+                            <li>日盛證券北高雄分公司-營業員</li>
+                            <li>群益金鼎證券-營業員</li>
+                        </ul>
+                    </li>
+                    <li class="year">
+                        2017年10月
+                        <br> 2017年06月
+                        <br> 2017年01月
+                        <br> 2015年07月
+                        <ul>
+                            <li>萬昌液化石油氣公司-會計</li>
+                            <li>日正會計師事務所-查帳員</li>
+                            <li>匯信會計事務所-記帳員</li>
+                            <li>成功嶺管理幹部</li>
+                        </ul>
+                    </li>
+                    <li class="year">
+                        2014年09月
+                        <br>
+                        <br>
+                        <br> 2010年09月
+                        <ul>
+                            <li>學生會獎懲委員</li>
+                            <li>高雄大學辯論社社長</li>
+                            <li>雙主修財經法律學系</li>
+                            <li>就讀高雄大學金融管理學系</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+    </footer>
+
+</body>
+
+</html>
